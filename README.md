@@ -1,6 +1,6 @@
 # My **vimrc**
 
-This is my $HOME/.vim/vimrc file. The contents of `$HOME/.vim` file is:
+This is my $HOME/.vim/vimrc file. The contents of `$HOME/.vim` directory is:
 
 ```bash
 .
