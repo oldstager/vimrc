@@ -22,6 +22,9 @@ set ruler
 set undolevels=1000
 set backspace=indent,eol,start
 
+filetype plugin indent on
+set ofu=syntaxcomplete#Complete
+
 " Use 24-bit (true-color) mode in Vim/Neovim when outside tmux or screen.
 " If you're using tmux version 2.2 or later, you can remove the outermost $TMUX
 " check and use tmux's 24-bit color support
@@ -45,12 +48,14 @@ colorscheme open-color
 syntax on
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=darkgreen
 set cursorline
-set cursorcolumn
+" set cursorcolumn
+
+set guifont=Monospace\ 14
 
 " nerdtree
 let g:NERDTreeWinPos = "right"
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeNodeDelimiter = "\u00a0"
+let gRNERDTreeNodeDelimiter = "\u00a0"
 nnoremap <F4> :NERDTreeToggle<CR>  
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
@@ -61,4 +66,4 @@ let NERDTreeShowHidden=1
 
 " airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='ubaryd'
+let g:airline_theme='distinguished'
